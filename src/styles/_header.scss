@@ -1,0 +1,19 @@
+.header_container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    align-items: center;
+    background-color: $color-bg;
+}
+
+.btn_header {
+    background-color: $color-white; /* Green */
+    border: none;
+    color:  $color-bg;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+  }

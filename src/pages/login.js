@@ -11,7 +11,7 @@ export default function Login() {
 
     const onUserLogout = (e) => {
         e.preventDefault();
-        dispatch(login("mohamed@instabug.com","12345678"))
+        dispatch(login("mohamed6@instabug.com","12345678"))
     }
 
     return (

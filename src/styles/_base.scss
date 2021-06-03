@@ -3,7 +3,7 @@ $color-primary-light: #232b2b;
 $color-secondary: #353839;
 $color-secondary-light: #3b444b;
 $color-accent: #414a4c;
-
+$color-bg:#132E66;
 $color-text: #333;
 $color-white: #fff;
 $color-white-transparent: rgba($color-white, .8);
@@ -28,33 +28,38 @@ html {
 
     @include responsive(tab-land) {
         font-size: 56.25%; // 9px = 1rem; 9/16px = 56.25%;
-      
     }
 
     @include responsive(tab-port) {
         font-size: 50%; // 8px 
-        .container{
+        .main_container{
             display: flex;
-            flex-direction: column;          
+            flex-direction: column;   
         }
         .container_img{
             img{
                 width: 250px;
             } 
-    }
+         }
+         .header_container{
+             padding: 20px;
+         }
     }
 
     @include responsive(phone) {
         font-size: 43.75%; // 7px = 1rem
-        .container{
+        .main_container{
             display: flex;
-            flex-direction: column;          
+            flex-direction: column;   
         }
         .container_img{
             img{
                 width: 250px;
             } 
-    }
+         }
+         .header_container{
+             padding: 20px;
+         }
     }
     @include responsive(big-desktop) {
         font-size: 75%; // 12px = 1rem

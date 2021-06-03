@@ -5,6 +5,7 @@ import { MainComponent } from '../components/mainComponent'
 import useAuthListener from '../hooks/user-auth-listener'
 import { logout } from '../redux/user/user-actions'
 import home from '../assets/home.svg'
+import { Header } from '../components/header'
 
 export default function Welcome() {
 
@@ -23,6 +24,7 @@ export default function Welcome() {
 
     return (
         <>
+            <Header onLogout={onUserLogout} />
             <MainComponent h1="Hello ," h2={email} img={home} />
         </>
     )
