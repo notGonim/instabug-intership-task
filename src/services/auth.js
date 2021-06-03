@@ -21,5 +21,5 @@ export const isUserAuthenticated = (email, password) => {
             authenticatedUser = user
         }
     })
-    return authenticatedUser
+    return {authenticatedUser}
 }

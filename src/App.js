@@ -4,6 +4,7 @@ import './App.scss';
 import { lazy, Suspense } from "react";
 import ProtectedRoute from "./helpers/protected-routes";
 import IsUserLoggedIn from "./helpers/is-user-logged-in";
+import useAuthListener from "./hooks/user-auth-listener";
 
 
 
@@ -13,14 +14,16 @@ const Welcome = lazy(() => import('./pages/welcome'))
 
 
 function App() {
+
+  const { activeUser } = useAuthListener()
   return (
     <Router>
       <Suspense fallback={<p>Loading ...</p>}>
         <Switch>
-          <IsUserLoggedIn user="user" loggedInPath={ROUTES.WELCOME} path={ROUTES.LOGIN}>
+          <IsUserLoggedIn user={activeUser} loggedInPath={ROUTES.WELCOME} path={ROUTES.LOGIN}>
             <Login />
           </IsUserLoggedIn>
-          <ProtectedRoute user="user" path={ROUTES.WELCOME} exact>
+          <ProtectedRoute user={activeUser} path={ROUTES.WELCOME} exact>
             <Welcome />
           </ProtectedRoute  >
           <Route component={NotFound} />
