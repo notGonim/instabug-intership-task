@@ -11,7 +11,7 @@ export const login = (email, password) => async dispatch => {
     if (authenticated) {
         dispatch({
             type: "LOGIN_SUCCESS",
-            payload: authenticated
+            payload: authenticated.authenticatedUser
         })
     } else {
         const err = "Your email and/or password are incorrect"
@@ -41,7 +41,6 @@ export const logout = () => async dispatch => {
 
     }
 }
-
 
 
 //clearing errors 

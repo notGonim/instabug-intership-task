@@ -1,0 +1,76 @@
+$color-primary: #0e1111;
+$color-primary-light: #232b2b;
+$color-secondary: #353839;
+$color-secondary-light: #3b444b;
+$color-accent: #414a4c;
+
+$color-text: #333;
+$color-white: #fff;
+$color-white-transparent: rgba($color-white, .8);
+$head-title-size:70px;
+$head-title-size2:15px;
+
+$font-primary: Lato, sans-serif;
+
+$button-border-radius: .5rem;
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; // 10px = 1rem; 10/16px = 62.5%;
+
+    @include responsive(tab-land) {
+        font-size: 56.25%; // 9px = 1rem; 9/16px = 56.25%;
+      
+    }
+
+    @include responsive(tab-port) {
+        font-size: 50%; // 8px 
+        .container{
+            display: flex;
+            flex-direction: column;          
+        }
+        .container_img{
+            img{
+                width: 250px;
+            } 
+    }
+    }
+
+    @include responsive(phone) {
+        font-size: 43.75%; // 7px = 1rem
+        .container{
+            display: flex;
+            flex-direction: column;          
+        }
+        .container_img{
+            img{
+                width: 250px;
+            } 
+    }
+    }
+    @include responsive(big-desktop) {
+        font-size: 75%; // 12px = 1rem
+    }
+}
+
+body {
+    font-family: $font-primary;
+    color: $color-text;
+    font-weight: 400;
+    line-height: 1.6;
+}
+h1{
+font-size: $head-title-size;
+}
+h2{
+    font-size: $head-title-size2;
+
+}

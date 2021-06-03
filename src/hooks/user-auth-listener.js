@@ -13,7 +13,6 @@ export default function useAuthListener() {
             setActiveUser(null)
         }
     }, [user])
-
     return { activeUser }
 
 }
