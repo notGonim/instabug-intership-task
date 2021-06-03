@@ -8,6 +8,7 @@ const UserReducer = (state = INITIAL_STATE, action) => {
 
     switch (action.type) {
         case 'LOGIN_REQUEST':
+        case 'LOGOUT_REQUEST':
             return {
                 loading: true,
                 isAuthenticated: false
