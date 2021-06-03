@@ -4,7 +4,7 @@ import '../styles/main.scss'
 import * as ROUTES from '../constants/routes'
 import logo from '../assets/logo.svg'
 
-export const Header = ({onLogout}) => {
+export const Header = ({onLogout,btnText}) => {
     return (
 
         <header className="header_container">
@@ -14,7 +14,7 @@ export const Header = ({onLogout}) => {
                 </Link>
             </div>
             <div className="btn_container">
-                <button className="btn_header" onClick={onLogout}>LOGOUT</button>
+                <button className="btn_header" onClick={onLogout}>{btnText}</button>
             </div>
         </header>
     )

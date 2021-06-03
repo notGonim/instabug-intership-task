@@ -41,8 +41,22 @@ html {
                 width: 250px;
             } 
          }
+         .btn_header{
+             padding: 10px;
+         }
          .header_container{
-             padding: 20px;
+             padding: 5px;
+         }
+         .notfound_container{
+            img{
+                width: 350px;
+            }
+            h1{
+                font-size: 20px;
+            }
+            p{
+                font-size: 10px;
+            }
          }
     }
 
@@ -57,8 +71,22 @@ html {
                 width: 250px;
             } 
          }
+         .btn_header{
+             padding: 10px;
+         }
          .header_container{
-             padding: 20px;
+             padding: 5px;
+         }
+         .notfound_container{
+            img{
+                width: 350px;
+            }
+            h1{
+                font-size: 20px;
+            }
+            p{
+                font-size: 10px;
+            }
          }
     }
     @include responsive(big-desktop) {

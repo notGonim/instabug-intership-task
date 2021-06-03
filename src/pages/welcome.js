@@ -24,7 +24,7 @@ export default function Welcome() {
 
     return (
         <>
-            <Header onLogout={onUserLogout} />
+            <Header onLogout={onUserLogout} btnText="LOGOUT"/>
             <MainComponent h1="Hello ," h2={email} img={home} />
         </>
     )
