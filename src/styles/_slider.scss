@@ -1,0 +1,50 @@
+
+
+div.wrapper{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  div.wrapper .content{
+    
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  
+  .img-box{
+    width: 500px;
+    height: 350px;
+  }
+  
+  .img-box img{
+    width: 100%;
+    height: 100%;
+  }
+  
+  .indicators-box{
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .indicators-box .indicator{
+    width: 15px;
+    height: 15px;
+    border: 1px solid #fff;
+    margin-right: 25px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .indicators-box .indicator.active{
+    background-color: #fff;
+  }
