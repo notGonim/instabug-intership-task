@@ -43,22 +43,24 @@ export const Slider = () => {
                 {step === 1 && <motion.div className='img-box' variants={imgBoxVariants}
                     initial="hidden" animate="visible">
                     <img src={img1} alt="img1" />
+                    <h2>Secure Crash Reporting With Real-Time Alerts</h2>
+
                 </motion.div>}
 
                 {step === 2 && <motion.div className='img-box' variants={imgBoxVariants}
                     initial="hidden" animate="visible">
                     <img src={img2} alt="img1" />
+                    <h2>The Most Comprehensive Bug Reporting Tool for Mobile Apps</h2>
                 </motion.div>}
 
                 {step === 3 && <motion.div className='img-box' variants={imgBoxVariants}
                     initial="hidden" animate="visible">
                     <img src={img3} alt="img1" />
+                    <h2>Accelerate Your Entire Mobile Team Workflow</h2>
+
                 </motion.div>}
 
-
-
             </div>
-
             <div className='indicators-box'>
 
                 {step === 1 && <><div className='indicator active'></div>
