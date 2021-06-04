@@ -13,7 +13,8 @@ export const login = (email, password) => async dispatch => {
             type: "LOGIN_SUCCESS",
             payload: authenticated.authenticatedUser
         })
-    } else {
+    }
+    if (authenticated.authenticatedUser === null) {
         const err = "Your email and/or password are incorrect"
         dispatch({
             type: "LOGIN_FAIL",

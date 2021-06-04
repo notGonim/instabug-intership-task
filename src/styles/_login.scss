@@ -110,6 +110,27 @@
       outline: none;
     }
   }
+  .errHandler{
+      color: rgb(208, 36, 36);
+      font-size: 10px;
+  }
+  .bordererr{
+    border: 1px solid red !important;
+}
+  .err_container{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    outline: none;
+    background-color: #FCE6E2;
+    p{
+        font-size: 20px;
+    }
+  }
   .btn_login {
     width: 100%;
     background-color: #3171d9;
