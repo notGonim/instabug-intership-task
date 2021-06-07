@@ -36,6 +36,11 @@ export const Slider = () => {
         setStep(3);
     }
 
+
+    const gToSlide=slideNum=>{
+        setStep(slideNum)
+    }
+
     return (
         <div className='wrapper'>
 
